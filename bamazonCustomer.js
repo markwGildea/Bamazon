@@ -1,4 +1,4 @@
-var mysql = require('mysql');
+var sql = require('mysql');
 
 var inquire = require('inquirer');
 
