@@ -12,5 +12,14 @@ var connection = mysql.createConnection({
     database: "Bamazon"
 });
 
+connection.connect(function(err) {
+	if (err) throw err;
+	runSearch();
+});
 
+var runSearch = function () {
+	inquirer.prompt({
+
+	});
+};
 
