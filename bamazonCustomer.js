@@ -14,15 +14,17 @@ var connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
 
+    //my username
     user: "root",
 
+    //my password
     password: "mgof5562",
     database: "Bamazon"
 });
 
 connection.connect(function(err) {
 	if (err) throw err;
-	runSearch();
+    console.log("connected as id: " + connection.threadId);
 });
 
 var runSearch = function () {
